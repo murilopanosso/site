@@ -30,8 +30,8 @@ const Experience = () => {
           Beblue - Squad Leader (From Jan/2019 to Sep/2019)
         </Card.Title>
         <Card.Text style={{ textAlign: 'justify' }}>
-          Working with C# on new features, platform maintainability and gathering materials and
-          technologies to apply on a new web platform.
+          Working essentially leading the team and conducting technical and business meetings.
+          Presenting estimates and results  to C level.
         </Card.Text>
         <Card.Title>
           {'>'}
@@ -39,8 +39,17 @@ const Experience = () => {
           Beblue - Senior Front End Engineer (From Jun/2018 to Jan/2019)
         </Card.Title>
         <Card.Text style={{ textAlign: 'justify' }}>
-          Working with C# on new features, platform maintainability and gathering materials and
-          technologies to apply on a new web platform.
+          Working with React, Redux, Java and Spring,
+          mainly on new features and mentoring Junior and Intermediate developers.
+        </Card.Text>
+        <Card.Title>
+          {'>'}
+          {' '}
+          AMDOCS - Front End Engineer (From Aug-2016 Until May-2018)
+        </Card.Title>
+        <Card.Text style={{ textAlign: 'justify' }}>
+          Working wit Front h React, Redux,
+          Java and Spring on projects for leading telecom companies in Brazil such NET and VIVO.
         </Card.Text>
         <Card.Title>
           {'>'}
@@ -48,8 +57,8 @@ const Experience = () => {
           9i - Full Stack Engineer (From Oct/2015 to Jul/2016)
         </Card.Title>
         <Card.Text style={{ textAlign: 'justify' }}>
-          Working with C# on new features, platform maintainability and gathering materials and
-          technologies to apply on a new web platform.
+          Working with JS, Java and Play Framework mainly on new projects.
+          We built the online platform to the end user manage accounts and also the payment engine.
         </Card.Text>
         <Card.Title>
           {'>'}
@@ -57,8 +66,8 @@ const Experience = () => {
           IBM Dublin - Summer Internship (From Jun/2015 to Aug/2015)
         </Card.Title>
         <Card.Text style={{ textAlign: 'justify' }}>
-          Working with C# on new features, platform maintainability and gathering materials and
-          technologies to apply on a new web platform.
+          I joined the ethical hacking team, where I could follow procedures of scanning servers
+          and web sites, searching for vulnerabilities and the opportunity to exploit it.
         </Card.Text>
         <Card.Title>
           {'>'}
@@ -66,8 +75,8 @@ const Experience = () => {
           SiplanControlM - Software Engineer (From Oct/2012 to Jun/2014)
         </Card.Title>
         <Card.Text style={{ textAlign: 'justify' }}>
-          Working with C# on new features, platform maintainability and gathering materials and
-          technologies to apply on a new web platform.
+          Working with C# and Delphi I had the opportunity to help the
+          company maintain the existing projects and even create one of the flagship products of the company.
         </Card.Text>
       </Card.Body>
 
