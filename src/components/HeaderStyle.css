@@ -1,0 +1,27 @@
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@2/distr/fira_code.css);
+
+code { font-family: 'Fira Code', monospace; }
+
+@supports (font-variation-settings: normal) {
+  code { font-family: 'Fira Code VF', monospace; }
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px 20px 5px;
+  }
+  
+  .header a {
+    margin: 0 10px;
+    color: gray;
+  }
+
+  .header a:hover {
+    background-color: pink;
+    color: gray;
+    text-decoration: none;
+  }
+  
+  .item-selected{
+    background-color: pink;
+  }
