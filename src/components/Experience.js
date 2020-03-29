@@ -76,7 +76,8 @@ const Experience = () => {
         </Card.Title>
         <Card.Text style={{ textAlign: 'justify' }}>
           Working with C# and Delphi I had the opportunity to help the
-          company maintain the existing projects and even create one of the flagship products of the company.
+          company maintain the existing projects and even create one of the
+          flagship products of the company.
         </Card.Text>
       </Card.Body>
 
