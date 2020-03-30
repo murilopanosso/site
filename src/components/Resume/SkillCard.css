@@ -25,3 +25,8 @@
       text-align: justify;
      
   }
+
+  .img-card:hover {
+    width: 120px;
+    height: 120px;
+  }

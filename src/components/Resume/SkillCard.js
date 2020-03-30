@@ -4,8 +4,12 @@ import PropTypes from 'prop-types';
 import { Image } from 'react-bootstrap';
 import './SkillCard.css';
 
+const setOnMouseLeave = (flipped, set) => {
+  if (flipped) {
+    set(false);
+  }
+};
 
-const renderBackCard = (back) => <div>{back}</div>;
 
 const SkillCard = ({ cardImage, backText }) => {
   const [flipped, set] = useState(false);
@@ -15,13 +19,18 @@ const SkillCard = ({ cardImage, backText }) => {
     config: { mass: 5, tension: 500, friction: 80 },
   });
   return (
-    <div className="root-card" onMouseEnter={() => set((state) => !state)} onMouseLeave={() => set((state) => !state)}>
-      <a.div className="c back" style={{ opacity: opacity.interpolate((o) => 1 - o), transform }}>
-        <Image src={cardImage} style={{ height: '100px', width: '100px' }} rounded />
-      </a.div>
-      <a.div className="c front" style={{ opacity, transform: transform.interpolate((t) => `${t} rotateX(180deg)`) }}>
-        {renderBackCard(backText)}
-      </a.div>
+    <div>
+      <div className="root-card" onKeyDown={() => {}} onClick={() => set((state) => !state)}>
+        <a.div
+          className="c back"
+          style={{ opacity: opacity.interpolate((o) => 1 - o), transform }}
+        >
+          <Image className="img-card" src={cardImage} style={{ height: '100px', width: '100px' }} rounded />
+        </a.div>
+        <a.div onMouseOutCapture={() => setOnMouseLeave(flipped, set)} className="c front" style={{ opacity, transform: transform.interpolate((t) => `${t} rotateX(180deg)`) }}>
+          <div>{backText}</div>
+        </a.div>
+      </div>
     </div>
   );
 };

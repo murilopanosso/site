@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import SkillCard from './SkillCard';
 import ResumeConsts from './ResumeConsts';
 
+
 import jsImage from '../../static/img/js.png';
 import javaImage from '../../static/img/java.png';
 import cSharpImage from '../../static/img/cSharp.png';
