@@ -20,7 +20,7 @@ const SkillCard = ({ cardImage, backText }) => {
   });
   return (
     <div>
-      <div className="root-card" onKeyDown={() => {}} onClick={() => set((state) => !state)}>
+      <div className="root-card" onClick={() => set((state) => !state)}>
         <a.div
           className="c back"
           style={{ opacity: opacity.interpolate((o) => 1 - o), transform }}

@@ -2,6 +2,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => (
   <Card>
@@ -17,7 +18,7 @@ const Footer = () => (
           <FontAwesomeIcon style={{ height: '30px', width: '30px' }} icon={faFacebookSquare} color="black" />
         </a>
         <a href="mailto:murilopanosso@gmail.com">
-          <FontAwesomeIcon style={{ height: '30px', width: '30px' }} icon={faGithubSquare} color="black" />
+          <FontAwesomeIcon style={{ height: '30px', width: '30px' }} icon={faEnvelopeSquare} color="black" />
         </a>
       </footer>
     </Card.Body>
