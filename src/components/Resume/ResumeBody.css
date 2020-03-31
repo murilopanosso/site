@@ -58,3 +58,15 @@
     background-color: pink;
     color: gray;
   }
+
+  .card-root {
+    width: 60%;
+  }
+
+
+  @media screen and (max-width: 900px) {
+    .card-root {
+      width: 100%;
+    }
+  
+  }

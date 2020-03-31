@@ -30,9 +30,11 @@ const ResumeBody = () => {
   const executeScrollToRef = () => scrollToRef(myref);
   return (
     <div>
-      <Card style={{
-        width: '100%', margin: '0 auto', border: '0px', padding: '20px',
-      }}
+      <Card
+        className="card-root"
+        style={{
+          margin: '0 auto', border: '0px', padding: '20px',
+        }}
       >
         <Card.Body>
           <Card.Title>
