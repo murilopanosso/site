@@ -13,15 +13,15 @@ code { font-family: 'Fira Code', monospace; }
   
   .header a {
     margin: 0 10px;
-    color: gray;
+    color: black;
   }
 
   .header a:hover {
-    background-color: pink;
+    text-decoration: underline;
     color: gray;
-    text-decoration: none;
   }
   
   .item-selected{
-    background-color: pink;
+    text-decoration: underline;
+    color: gray;
   }

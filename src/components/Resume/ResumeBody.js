@@ -33,7 +33,7 @@ const ResumeBody = () => {
       <Card
         className="card-root"
         style={{
-          margin: '0 auto', border: '0px', padding: '20px',
+          margin: '0 auto', border: '0px',
         }}
       >
         <Card.Body>

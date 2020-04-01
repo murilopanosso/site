@@ -55,7 +55,7 @@
   }
 
   .link:hover {
-    background-color: pink;
+    font-weight: 500;
     color: gray;
   }
 
