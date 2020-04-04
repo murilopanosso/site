@@ -1,7 +1,7 @@
 export default {
   js: 'Javascript is currently the language I am most comfortable with, I am constantly discovering new features, which sometimes I believe that first arose as a flaw (or somewhere in between). But I love how flexible JS can be, and how powerful when it comes to end user interaction.',
   java: 'Java is my first BE language, since I have faced challenges involving Java in almost every team I had contributed with. Yes, it’s verbose. Yes, it’s pretty damn heavy. Sometimes comply with DDD, for example, could be very painful. but it’s indisputably reliable.',
-  cSharp: 'C # is my current full time Job language. I already experienced leading teams that used C # before.With the rise of dotnet core, in my opinion, C # was taken to another level. Since it’s been fully rewritten, it’s a pretty new product, which will gain more market share with the years to come.',
+  cSharp: 'C# is my current full time Job language. With the rise of dotnet core, in my opinion, C # was taken to another level. Since it’s been fully rewritten, it’s a pretty new product, which will gain more market share with the years to come.',
   bjj: 'Jiu Jitsu is one of my hobbies, I am currently a blue belt, always striving to be better than I was yesterday, not just on JJ but everything in life. And this is the way I try to be fit.',
   travel: 'I love to travel, discover new places and cultures, in my opinion this is one of the best investments a human being can make to care for mental and physical health.',
   stock: 'I really enjoy talk about financial subjects, especially when it comes to stocks market. I love when I make a forecast about a specific stock, and it comes true months later. However I am still a beginner at this world.',

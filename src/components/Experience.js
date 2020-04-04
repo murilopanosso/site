@@ -39,7 +39,10 @@ const Experience = () => {
               features and enhance existing ones to comply with regulations;
             </p>
             <p>- Perform researches and develop POC’s for bleeding edge products;</p>
-            <p>- Working heavily with unit and integration tests to reach high code coverage standards;</p>
+            <p>
+              - Working heavily with unit and integration tests to
+              reach high code coverage standards;
+            </p>
             <p>- Perform end to end tests.</p>
 
           </Card.Text>
@@ -54,9 +57,19 @@ const Experience = () => {
           </Card.Text>
           <Card.Text>
             <p>Main Responsibilities:</p>
-            <p>- Take part on business meetings to evaluate the technical aspects of a potential new feature;</p>
-            <p>- Evaluate how valuable a potential new feature would be for the business from a technical point of view;</p>
-            <p>- Participate on grooming meetings with product and design team to break the feature on user stories and evaluate the effort on dev team and the impact on the whole system;</p>
+            <p>
+              - Take part on business meetings to evaluate the
+              technical aspects of a potential new feature;
+            </p>
+            <p>
+              - Evaluate how valuable a potential new feature
+              would be for the business from a technical point of view;
+            </p>
+            <p>
+              - Participate on grooming meetings with product and
+              design team to break the feature on user stories and
+              evaluate the effort on dev team and the impact on the whole system;
+            </p>
             <p>- Conduct Refining and Planning meetings with the dev team;</p>
             <p>- Mentor intermediate and Junior developers;</p>
             <p>- Monitor and ensure the availability of the services under my responsibility;</p>
@@ -65,8 +78,12 @@ const Experience = () => {
             <p>- Conduct one-on-one meetings with developers to collect and give feedback;</p>
             <p>- Perform Analyses of pull requests;</p>
             <p>- Lead a multidisciplinary team;</p>
+            <p>- Conduct technical interviews;</p>
             <p>- Hold meetings and analyze technical quality of outsourced teams;</p>
-            <p>- Conduct Sprint Retrospective meetings alongside with the Agile Master and Product Owner;</p>
+            <p>
+              - Conduct Sprint Retrospective meetings alongside with
+              the Agile Master and Product Owner;
+            </p>
             <p>
               - Inspire the team
               {'<3'}
@@ -110,7 +127,10 @@ const Experience = () => {
             <p>- Perform operations of maintainability on existing products;</p>
             <p>- Participate on refining and planning meetings;</p>
             <p>- Support customers on site;</p>
-            <p>- Follow up User Acceptance Tests on site to give immediate support in case bugs and defects found;</p>
+            <p>
+              - Follow up User Acceptance Tests on site to give
+              immediate support in case bugs and defects found;
+            </p>
 
           </Card.Text>
           <Card.Title>
