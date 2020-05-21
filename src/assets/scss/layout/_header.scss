@@ -69,7 +69,8 @@
     }
     .avatar{
       border-radius: 50%;
-      padding-top: 1px;
+      width:6.4rem;
+      height: 6.4rem;
     }
   }
 
@@ -225,7 +226,13 @@
           font-size: 1.75rem;
         }
       }
+      .avatar{
+        border-radius: 50%;
+        width:4.75rem;
+        height: 4.75rem;
+      }
     }
+
 
     .content {
       .inner {
