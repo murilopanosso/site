@@ -12,7 +12,7 @@ steps:
 
 - script: |
     yarn install
-    gatsby build
+    yarn build
   displayName: 'yarn install and gatsby build'
 
 - task: PublishBuildArtifacts@1
