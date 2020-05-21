@@ -128,4 +128,16 @@ psd
 thumb
 sketch
 
+
+# Project dependencies
+.cache
+node_modules
+yarn-error.log
+
+# Build directory
+/public
+.DS_Store
+
+
+
 # End of https://www.gitignore.io/api/node,code,react
