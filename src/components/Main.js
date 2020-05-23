@@ -30,7 +30,8 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">A few things about me</h2>
+          <h2 className="major">Intro</h2>
+          <h2>A few things about me</h2>
 
           <div className="card-container">
             <Card
@@ -45,8 +46,6 @@ class Main extends React.Component {
                 'Jiu Jitsu is one of my hobbies, I am currently a blue belt, always striving to be better than I was yesterday, not just on JJ but everything in life. And this is the way I try to be fit.'
               }
             />
-          </div>
-          <div className="card-container">
             <Card
               cardImage={Stocks}
               backText={
@@ -55,24 +54,7 @@ class Main extends React.Component {
             />
           </div>
 
-          <h2 className="major">Professional</h2>
-
-          <div className="card-container">
-            <Card
-              cardImage={Travel}
-              backText={
-                'Jiu Jitsu is one of my hobbies, I am currently a blue belt, always striving to be better than I was yesterday, not just on JJ but everything in life. And this is the way I try to be fit.'
-              }
-            />
-            <Card
-              cardImage={GI}
-              backText={
-                'Jiu Jitsu is one of my hobbies, I am currently a blue belt, always striving to be better than I was yesterday, not just on JJ but everything in life. And this is the way I try to be fit.'
-              }
-            />
-          </div>
-
-          <h2 className="major">Personal</h2>
+          <h2>Professional</h2>
 
           <div className="card-container">
             <Card

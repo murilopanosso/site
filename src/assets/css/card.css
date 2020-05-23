@@ -17,13 +17,27 @@
   }
 
   .card-container {
-    display: flex;
-    justify-content: center;
+    background-size: cover;
+    padding: 4rem 2rem;
+  
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
+
+  
+
+@-moz-document url-prefix() { 
+    .flip-card-inner {
+      
+      backface-visibility: hidden;
+    }
+    
+}
   
   .flip-card-front, .flip-card-back {
     position: absolute;
@@ -45,7 +59,7 @@
   }
   
   .flip-card-back {
-    background-color: none;
+    background-color: none; 
     color: white;
     transform: rotateY(180deg);
   }
