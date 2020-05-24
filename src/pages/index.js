@@ -1,4 +1,12 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux';
+
+import {setComponentTimeOut,
+        setArticleVisible,
+        setArticleTimeOut,
+        setArticleLoading, setActiveArtice  } from "../store/actions/Articles";
+
 import Layout from '../components/layout'
 
 import Header from '../components/Header'
@@ -8,13 +16,7 @@ import Footer from '../components/Footer'
 class IndexPage extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      isArticleVisible: false,
-      timeout: false,
-      articleTimeout: false,
-      article: '',
-      loading: 'is-loading',
-    }
+
     this.handleOpenArticle = this.handleOpenArticle.bind(this)
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
     this.setWrapperRef = this.setWrapperRef.bind(this)
@@ -23,7 +25,7 @@ class IndexPage extends React.Component {
 
   componentDidMount() {
     this.timeoutId = setTimeout(() => {
-      this.setState({ loading: '' })
+      this.props.setArticleLoading('');
     }, 100)
     document.addEventListener('mousedown', this.handleClickOutside)
   }
@@ -40,46 +42,36 @@ class IndexPage extends React.Component {
   }
 
   handleOpenArticle(article) {
-    this.setState({
-      isArticleVisible: !this.state.isArticleVisible,
-      article,
-    })
+
+    this.props.setArticleVisible(!this.props.isArticleVisible)
+    this.props.setActiveArtice(article)
 
     setTimeout(() => {
-      this.setState({
-        timeout: !this.state.timeout,
-      })
+      this.props.setComponentTimeOut(!this.props.timeout);
     }, 325)
 
     setTimeout(() => {
-      this.setState({
-        articleTimeout: !this.state.articleTimeout,
-      })
+      this.props.setArticleTimeOut(!this.props.articleTimeout)
     }, 350)
   }
 
   handleCloseArticle() {
-    this.setState({
-      articleTimeout: !this.state.articleTimeout,
-    })
+
+    this.props.setArticleTimeOut(!this.props.articleTimeout)
 
     setTimeout(() => {
-      this.setState({
-        timeout: !this.state.timeout,
-      })
+      this.props.setComponentTimeOut(!this.props.timeout);
     }, 325)
 
     setTimeout(() => {
-      this.setState({
-        isArticleVisible: !this.state.isArticleVisible,
-        article: '',
-      })
+      this.props.setArticleVisible(!this.props.isArticleVisible)
+      this.props.setActiveArtice('')
     }, 350)
   }
 
   handleClickOutside(event) {
     if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
-      if (this.state.isArticleVisible) {
+      if (this.props.isArticleVisible) {
         this.handleCloseArticle()
       }
     }
@@ -89,24 +81,24 @@ class IndexPage extends React.Component {
     return (
       <Layout location={this.props.location}>
         <div
-          className={`body ${this.state.loading} ${
-            this.state.isArticleVisible ? 'is-article-visible' : ''
+          className={`body ${this.props.loading} ${
+            this.props.isArticleVisible ? 'is-article-visible' : ''
           }`}
         >
           <div id="wrapper">
             <Header
               onOpenArticle={this.handleOpenArticle}
-              timeout={this.state.timeout}
+              timeout={this.props.timeout}
             />
             <Main
-              isArticleVisible={this.state.isArticleVisible}
-              timeout={this.state.timeout}
-              articleTimeout={this.state.articleTimeout}
-              article={this.state.article}
+              isArticleVisible={this.props.isArticleVisible}
+              timeout={this.props.timeout}
+              articleTimeout={this.props.articleTimeout}
+              article={this.props.article}
               onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
             />
-            <Footer timeout={this.state.timeout} />
+            <Footer timeout={this.props.timeout} />
           </div>
           <div id="bg"></div>
         </div>
@@ -115,4 +107,23 @@ class IndexPage extends React.Component {
   }
 }
 
-export default IndexPage
+const mapStateToProps = state => ({
+    isArticleVisible: state.article.isArticleVisible,
+    timeout: state.article.timeout,
+    articleTimeout: state.article.articleTimeout,
+    article: state.article.article,
+    loading:  state.article.loading,  
+  }
+)
+
+
+const mapDispatchToProps = dispatch =>
+    bindActionCreators({
+      setComponentTimeOut,
+      setArticleVisible,
+      setArticleTimeOut,
+      setArticleLoading,
+      setActiveArtice 
+    }, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(IndexPage)

@@ -1,7 +1,8 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+export { default as wrapRootElement } from './src/store/ReduxWrapper';
 
-// You can delete this file if you're not using it
+
+export const onRouteUpdate = ({ location, prevLocation }) => {
+  if (location.pathname === '/experience'){
+      window.location = '/'
+  }
+}
