@@ -18,7 +18,7 @@
 
   .card-container {
     background-size: cover;
-    padding: 4rem 2rem;
+    padding: 4rem 0rem;
   
     display: grid;
     align-items: center;

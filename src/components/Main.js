@@ -4,6 +4,11 @@ import React from 'react'
 import GI from '../images/gi.png'
 import Travel from '../images/travel.png'
 import Stocks from '../images/stocks.png'
+import JS from '../images/js.png'
+import CSharp from '../images/cSharp.png'
+import Java from '../images/java.png'
+import ReactImg from '../images/react.png'
+import Vue from '../images/vue.png'
 import Card from '../components/Card'
 
 class Main extends React.Component {
@@ -32,44 +37,72 @@ class Main extends React.Component {
         >
           <h2 className="major">Intro</h2>
           <h2>A few things about me</h2>
-
           <div className="card-container">
             <Card
               cardImage={Travel}
               backText={
-                'I love to travel, discover new places and cultures, in my opinion this is one of the best investments a human being can make to care for mental and physical health.'
+                'I love to travel, discover new places and cultures.'
               }
             />
+
             <Card
               cardImage={GI}
               backText={
-                'Jiu Jitsu is one of my hobbies, I am currently a blue belt, always striving to be better than I was yesterday, not just on JJ but everything in life. And this is the way I try to be fit.'
+                'Jiu Jitsu is one of my hobbies, I am currently a blue belt, always striving to be better than I was yesterday.'
               }
             />
+
+
             <Card
               cardImage={Stocks}
               backText={
-                'I really enjoy talk about financial subjects, especially when it comes to stocks market. I love when I make a forecast about a specific stock, and it comes true months later. However I am still a beginner at this world.'
+                'I really enjoy talk about financial subjects, especially when it comes to stocks market.'
               }
             />
           </div>
 
+          
           <h2>Professional</h2>
 
           <div className="card-container">
             <Card
-              cardImage={Travel}
+              cardImage={JS}
               backText={
-                'Jiu Jitsu is one of my hobbies, I am currently a blue belt, always striving to be better than I was yesterday, not just on JJ but everything in life. And this is the way I try to be fit.'
+                'Javascript is currently the language I am most comfortable with.'
               }
             />
             <Card
-              cardImage={GI}
+              cardImage={CSharp}
               backText={
-                'Jiu Jitsu is one of my hobbies, I am currently a blue belt, always striving to be better than I was yesterday, not just on JJ but everything in life. And this is the way I try to be fit.'
+                'C# is my current full time Job language.'
               }
             />
           </div>
+
+          <div className="card-container">
+            <Card
+              cardImage={Java}
+              backText={
+                'Java is the Back End language I used the most. I have faced challenges involving Java in almost every team I had contributed with.'
+              }
+            />
+          </div>
+          <div className="card-container">
+            <Card
+              cardImage={ReactImg}
+              backText={
+                'React is the JS Library I have most experience with.'
+              }
+            />
+            <Card
+              cardImage={Vue}
+              backText={
+                'VueJS is a very powerful framework, I have done a few freelance jobs.'
+              }
+            />
+
+          </div>
+
           {close}
         </article>
 
