@@ -11,6 +11,8 @@ import ReactImg from '../images/react.png'
 import Vue from '../images/vue.png'
 import Card from '../components/Card'
 
+import Timeline from './Timeline'
+
 class Main extends React.Component {
   render() {
     let close = (
@@ -113,11 +115,9 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Work Timeline</h2>
           <span className="image main"></span>
-          <p>
-            cv
-          </p>
+          <Timeline />
           {close}
         </article>
 
